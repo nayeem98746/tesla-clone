@@ -1,9 +1,9 @@
 .buttonPrimary {
-  background-color: #3e6ae1;
+  background-color: #051e61;
   border: none;
   padding: 12px 40px;
   border-radius: 50px;
-  color: white;
+  color: rgb(245, 159, 159);
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
@@ -13,5 +13,5 @@
 }
 
 .buttonPrimary:hover {
-  background-color: #3457b1;
+  background-color: #293553;
 }

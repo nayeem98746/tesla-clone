@@ -15,6 +15,9 @@ import { login, logout, selectUser } from './features/userSlice'
 import Signup from './Signup'
 import TeslaAccount from './TeslaAccount'
 import { auth } from './firebase'
+import Models from './Models/Models'
+import ModelX from './ModelX/ModelX'
+import ModelY from './ModelY/ModelY'
 
 function App() {
   const user = useSelector(selectUser)
@@ -53,6 +56,15 @@ function App() {
           </Route>
           <Route exact path='/signup'>
             <Signup />
+          </Route>
+          <Route exact path='/models'>
+            <Models></Models>
+          </Route>
+          <Route exact path='/modelx'>
+            <ModelX></ModelX>
+          </Route>
+          <Route exact path='/modely'>
+            <ModelY></ModelY>
           </Route>
           <Route exact path='/teslaaccount'>
             {!user ? (
